@@ -11,6 +11,7 @@ describe("Footer", () => {
 
   it("should render current year", () => {
     render(<Footer />);
+    
     const currentYearElement = screen.getByLabelText("current year");
 
     expect(currentYearElement).toBeVisible();
